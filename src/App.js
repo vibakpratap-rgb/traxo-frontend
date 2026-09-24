@@ -5,6 +5,7 @@ import { Bell, Boxes, ClipboardList, FileBarChart, LayoutDashboard, LogOut, Menu
 import "@/App.css";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
+console.log("BACKEND URL =", process.env.REACT_APP_BACKEND_URL);
 const api = axios.create({
   baseURL: process.env.REACT_APP_BACKEND_URL
 });
