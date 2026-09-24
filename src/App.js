@@ -7,7 +7,7 @@ import "@/App.css";
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 console.log("BACKEND URL =", process.env.REACT_APP_BACKEND_URL);
 const api = axios.create({
-  baseURL: process.env.REACT_APP_BACKEND_URL
+  baseURL: `${process.env.REACT_APP_BACKEND_URL}/api`
 });
 const chartData = [{month:"Jan", purchase:72, issue:38},{month:"Feb", purchase:98, issue:44},{month:"Mar", purchase:81, issue:56},{month:"Apr", purchase:124, issue:65},{month:"May", purchase:106, issue:78},{month:"Jun", purchase:148, issue:92}];
 const nav = [{label:"Overview", icon:LayoutDashboard, id:"overview"},{label:"Inventory", icon:Boxes, id:"inventory"},{label:"Stock Ledger", icon:BookOpen, id:"ledger"},{label:"Purchases", icon:PackagePlus, id:"purchases"},{label:"Issues & Returns", icon:ClipboardList, id:"issues"},{label:"Reports & Analytics", icon:FileBarChart, id:"reports"},{label:"Vendors", icon:Truck, id:"vendors"},{label:"Employees", icon:UserRound, id:"employees"},{label:"Team & Access", icon:Users, id:"team"},{label:"Audit Trail", icon:ShieldCheck, id:"audit"}];
